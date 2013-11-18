@@ -54,7 +54,7 @@ If you have only infinitely sized templates, you need to specify a count:
 The following templates are supported:
 
 * Anything with an `each` method that returns an Enumerator.
-* Procs or lambdas. One argument is passed: the number of the current iteration.
+* Procs or lambdas. One (optional) argument is passed: the number of the current iteration.
 * An instance of any class that has a `next` method. If this class also has a `count` method,
   it is considered a fixed-size template.
 

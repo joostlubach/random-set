@@ -82,7 +82,11 @@ module RandomSet
       attr_reader :block
 
       def next
-        block.call @iteration
+        if block.arity == 1
+          block.call @iteration
+        else
+          block.call
+        end
       ensure
         @iteration += 1
       end
