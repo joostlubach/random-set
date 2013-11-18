@@ -114,6 +114,11 @@ describe Template do
       expect(Template.new([ generator ]).generators[0]).to be(generator)
     end
 
+    it "should raise an error for something else" do
+      expect{ Template.new([ Object.new ]) }
+        .to raise_error(UnsupportedTemplate, "cannot create a generator for a template of class Object")
+    end
+
   end
 
 
