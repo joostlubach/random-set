@@ -26,5 +26,5 @@ module RandomSet
   end
 end
 
-require 'random_data/template'
-require 'random_data/gaussian_trend'
+require 'random_set/template'
+require 'random_set/gaussian_trend'
