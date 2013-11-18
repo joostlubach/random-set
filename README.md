@@ -7,6 +7,8 @@ Conversely, if an array is given, the output is an array of arrays.
 Each item in the given template corresponds to an attribute of each item in the result
 set, and specifies how its data should be generated.
 
+[<img src="https://secure.travis-ci.org/yoazt/random-set.png?branch=master" alt="Build Status" />](http://travis-ci.org/yoazt/random-set)
+
 ## Installation
 
 Add this line to your application's Gemfile:
